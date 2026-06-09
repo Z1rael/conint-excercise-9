@@ -1,9 +1,9 @@
 import fastify from 'fastify';
 import { PrismaClient } from '@prisma/client';
 
-const prisma = new PrismaClient();
+export const prisma = new PrismaClient();
 
-const server = fastify();
+export const server = fastify();
 
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || '127.0.0.1';
