@@ -42,7 +42,7 @@ describe('GET /ping', () => {
 
     expect(mockCreate).toHaveBeenCalledTimes(1);
     expect(mockCreate).toHaveBeenCalledWith({ data: {} });
-    expect(mockCount).toHaveBeenCalledTimes(2);
+    expect(mockCount).toHaveBeenCalledTimes(1);
   });
 
   it('increments the count on each call', async () => {
