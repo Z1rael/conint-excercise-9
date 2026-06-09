@@ -58,7 +58,7 @@ jobs:
       - name: Build and Push to DockerHub
         uses: MaximilianoBz/dockerhub-buildpush@v1.1
         with:
-          registry_url: docker.io
+          registry_url: hub.docker.com
           repository_name: ${{secrets.DOCKERHUB_UN}}/contInt9
           user_name: ${{secrets.DOCKERHUB_UN}}
           password: ${{secrets.DOCKERHUB_TOKEN}}
