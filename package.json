@@ -14,7 +14,7 @@
     "start:dev": "dotenv -e .env.local -- nodemon ./app/index.ts",
     "migrate:dev": "dotenv -e .env.local -- npx prisma migrate dev",
     "prisma:generate:dev": "dotenv -e .env.local -- npx prisma generate",
-    "test:dev": "dotenv -e .env.local -- jest --coverage --detectOpenHandles"
+    "test": "dotenv -e .env.local -- jest --coverage --detectOpenHandles"
   },
   "author": "Lukas Aichbauer <lukas@devopscycle.com> (https://devopscycle.com)",
   "license": "MIT",
