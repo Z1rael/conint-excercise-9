@@ -21,6 +21,10 @@ describe('GET /ping', () => {
     jest.clearAllMocks();
   });
 
+  afterAll(() => {
+    server.close();
+  })
+
   it('returns 200 with the current counter count', async () => {
     //arrange
     mockCreate.mockResolvedValueOnce({});
